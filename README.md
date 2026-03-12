@@ -10,8 +10,11 @@ This project demonstrates the creation of a small virtual cybersecurity lab desi
 The objective of this project was to:
 
 Configure a virtual network environment
+
 Simulate a reconnaissance attack using network scanning tools
+
 Monitor and capture network traffic generated during the attack
+
 Analyze the results to understand how reconnaissance activity appears on a monitored system
 
 The lab environment consists of two systems:
@@ -29,7 +32,9 @@ The lab uses a simple network structure where the attacker system communicates w
 Network Configuration
 
 System	Role	IP Address
+
 Kali Linux	Attacker	192.168.56.102
+
 Ubuntu Server	Target / Monitoring	192.168.56.101
 
 Step 1 – Network Connectivity Verification
@@ -53,8 +58,11 @@ nmap -A 192.168.56.101
 The scan provided information about:
 
 Open ports
+
 Running services
+
 Service versions
+
 Basic host information
 
 This type of scan represents the reconnaissance phase of a cyberattack, where an attacker gathers information about a target system.
@@ -76,31 +84,45 @@ The Nmap scan identified exposed services on the Ubuntu server. During the scan,
 Key observations include:
 
 Network scans generate identifiable packet patterns
+
 Monitoring tools such as tcpdump can detect scanning activity
+
 Packet inspection provides insight into attacker behavior during early stages of intrusion attempts
 
 Tools Used
 
 Kali Linux
+
 Ubuntu Server
+
 VirtualBox
+
 Nmap
+
 tcpdump
 
 Skills Demonstrated
 
 Virtual machine network configuration
+
 Linux command-line administration
+
 Network reconnaissance techniques
+
 Packet capture and monitoring
+
 Basic security analysis
+
 Future Improvements
 
 Possible extensions of this lab include:
 
 Implementing firewall rules using UFW
+
 Adding an intrusion detection system such as Snort or Suricata
+
 Performing deeper packet analysis using Wireshark
+
 Automating scans and monitoring using scripts
 
 Conclusion
